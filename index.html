@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -43,9 +44,30 @@
 
 </div>
 
+<!-- RELATÓRIO -->
+
+<div id="relatorio"></div>
+
+<!-- BOTÃO PDF -->
+
+<button class="pdf-btn" onclick="baixarPDF()">
+Baixar Relatório PDF
+</button>
+<button onclick="novoCalculo()">
+Novo cálculo
+</button>
+
+
 </div>
+
+<!-- biblioteca PDF -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- seu javascript -->
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
