@@ -171,11 +171,26 @@ document.getElementById("idade").value=""
 
 document.getElementById("imc").innerHTML="0.0"
 document.getElementById("categoria").innerHTML=""
-
 document.getElementById("relatorio").innerHTML=""
 
 document.getElementById("painel").style.background="#dfe6ee"
 
-dadosRelatorio={}
+/* APAGAR QR CODE */
+
+document.getElementById("qrcode").innerHTML=""
+
+}
+
+function gerarQR(){
+
+let link = "https://diegodonascimentoconfessor.github.io/Calculadora_IMC/"
+
+document.getElementById("qrcode").innerHTML=""
+
+new QRCode(document.getElementById("qrcode"),{
+text: link,
+width: 150,
+height: 150
+})
 
 }

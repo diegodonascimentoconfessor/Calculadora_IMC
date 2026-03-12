@@ -53,14 +53,26 @@
 <button class="pdf-btn" onclick="baixarPDF()">
 Baixar Relatório PDF
 </button>
+
+<!-- BOTÃO QR -->
+
+<button onclick="gerarQR()">
+Gerar QR Code
+</button>
+
+<!-- QR CODE (agora dentro do app) -->
+
+<div id="qrcode"></div>
+
 <button onclick="novoCalculo()">
 Novo cálculo
 </button>
 
-
 </div>
 
-<!-- biblioteca PDF -->
+<!-- bibliotecas -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
